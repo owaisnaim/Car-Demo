@@ -1,1 +1,1 @@
-# CarDemo App for Adding,Updating and Deleting Car details
+# CarDemo App for Adding, Updating and Deleting Car details.
