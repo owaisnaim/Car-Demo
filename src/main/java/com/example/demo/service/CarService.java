@@ -11,11 +11,12 @@ import java.util.List;
 public class CarService {
     @Autowired
     private CarRepository carRepository;
-    public Car saveCar(Car car){
+
+    public Car saveCar(Car car) {
         return carRepository.save(car);
     }
 
-    public List<Car> findAll(){
+    public List<Car> findAll() {
         return carRepository.findAll();
     }
 
@@ -30,7 +31,7 @@ public class CarService {
     }
 
     public Car deleteCar(Integer id) {
-        Car deletedCar= getCarById(id);
+        Car deletedCar = getCarById(id);
         carRepository.deleteById(id);
         return deletedCar;
     }
